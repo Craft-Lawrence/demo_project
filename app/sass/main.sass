@@ -1,0 +1,86 @@
+/**
+ * Created by Kit. kit@foxk.ru
+ */
+@import "libs.sass"
+
+a:focus
+  outline: none
+  text-decoration: none
+
+::placeholder
+  color: #fff
+  font-style: italic
+
+::-webkit-scrollbar
+  width: 8px
+
+::-webkit-scrollbar-button
+  width: 0
+  height: 0
+
+::-webkit-scrollbar-thumb
+  background: #c71d33
+  border: 0 none #ffffff
+  border-radius: 50px
+
+::-webkit-scrollbar-thumb:hover
+  background: #ffffff
+
+::-webkit-scrollbar-thumb:active
+  background: #000000
+
+::-webkit-scrollbar-track
+  background: #2c2d31
+  border: 0 none #ffffff
+  border-radius: 0
+
+::-webkit-scrollbar-track:hover
+  background: #35363c
+
+::-webkit-scrollbar-track:active
+  background: #333333
+
+::-webkit-scrollbar-corner
+  background: transparent
+
+.hide
+  display: none !important
+
+.clear:after
+  display: block
+  content: ''
+  clear: both
+.clearfix
+  &:after
+    content: ""
+    display: block
+    clear: both
+
+a
+  line-height: 1
+
+ul, ul li
+  list-style: none
+
+body
+  background: #fff
+  min-width: 340px
+  *
+    font-family: "Open Sans", sans-serif
+    color: #2c2c2c
+    font-size: 14px
+
+.own-wrapper
+  width: 100%
+  max-width: 1230px
+
+header,section,footer
+  display: flex
+  justify-content: center
+
+.flex-center
+  display: flex
+  justify-content: center
+
+
+@import "mobile.sass"
